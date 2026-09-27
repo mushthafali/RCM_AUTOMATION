@@ -1,0 +1,315 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-canvas: #F4F7F6;
+    --text-primary: #192E27;
+    --text-secondary: #769188;
+    --border-color: #E4EFEA;
+    --brand-teal: #357F6B;
+    --brand-mint: #E8F4F0;
+    --brand-amber: #F6B738;
+  }
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #F4F7F6;
+  color: #192E27;
+  min-height: 100vh;
+  overflow-x: hidden;
+  letter-spacing: -0.015em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ==========================================================================
+   GLOBAL TEXT SELECTION BEHAVIOR (Prevent Accidental UI Selection)
+   Requirement: Disable text selection across all UI text (table headers,
+   cards, labels, buttons, navigation), EXCEPT for user form inputs/textareas.
+   ========================================================================== */
+*, *::before, *::after {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Explicitly preserve selection inside form inputs, textareas, and editable fields */
+input,
+textarea,
+[contenteditable="true"],
+.select-text,
+.selectable-text,
+.allow-select {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+}
+
+/* Selection Highlight Tint for allowed fields (Solid deep teal with crisp pure white text) */
+::selection {
+  background-color: #2D6B5A !important;
+  color: #FFFFFF !important;
+}
+
+::-moz-selection {
+  background-color: #2D6B5A !important;
+  color: #FFFFFF !important;
+}
+
+/* ==========================================================================
+   REFERENCE UI UTILITY CLASSES (Forest Teal, Soft Mint, Warm Amber)
+   ========================================================================== */
+
+/* 1. Reference Card (Pure White with 24px rounded corners & subtle diffuse shadow) */
+.ref-card, .desktop-card, .surface-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E4EFEA;
+  border-radius: 1.5rem; /* 24px */
+  box-shadow: 0 2px 14px -2px rgba(25, 46, 39, 0.05);
+  transition-property: transform, box-shadow, border-color;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+
+.ref-card:hover, .desktop-card:hover {
+  border-color: #D1E6DF;
+}
+
+/* 2. Forest Teal Primary Button */
+.btn-teal, .btn-primary, .btn-cobalt {
+  background-color: #357F6B;
+  color: #FFFFFF;
+  font-weight: 600;
+  border-radius: 9999px;
+  padding: 0.5rem 1.15rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  border: 1px solid #276353;
+  box-shadow: 0 2px 8px rgba(53, 127, 107, 0.25);
+  transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+}
+
+.btn-teal:hover, .btn-primary:hover, .btn-cobalt:hover {
+  background-color: #2A6957;
+  box-shadow: 0 4px 12px rgba(53, 127, 107, 0.35);
+  transform: translateY(-0.5px);
+}
+
+.btn-teal:active, .btn-primary:active, .btn-cobalt:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* 3. Soft Mint Accent Button */
+.btn-mint, .btn-ghost {
+  background-color: #E8F4F0;
+  color: #357F6B;
+  font-weight: 600;
+  border-radius: 9999px;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  border: 1px solid #D1E6DF;
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+}
+
+.btn-mint:hover, .btn-ghost:hover {
+  background-color: #DDF0E9;
+  color: #276353;
+}
+
+/* 4. Warm Amber Button */
+.btn-amber, .btn-gold {
+  background-color: #F6B738;
+  color: #192E27;
+  font-weight: 700;
+  border-radius: 9999px;
+  padding: 0.5rem 1.15rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  border: 1px solid #E5A82E;
+  box-shadow: 0 2px 8px rgba(246, 183, 56, 0.28);
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+}
+
+.btn-amber:hover, .btn-gold:hover {
+  background-color: #E8A727;
+  transform: translateY(-0.5px);
+}
+
+/* 5. Pill Search Input */
+.input-pill {
+  background-color: #FFFFFF;
+  border: 1px solid #E4EFEA;
+  border-radius: 9999px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  font-size: 0.75rem;
+  color: #192E27;
+  transition: all 0.15s ease;
+}
+
+.input-pill.pl-10,
+.input-pill.\!pl-10,
+.input-pill.pl-9,
+.input-pill.\!pl-9,
+.input-pill.pl-8,
+.input-pill.\!pl-8,
+.input-pill-search {
+  padding-left: 2.5rem !important;
+}
+
+.input-pill:focus {
+  outline: none;
+  border-color: #357F6B;
+  box-shadow: 0 0 0 3px rgba(53, 127, 107, 0.12);
+}
+
+/* 6. Form Input Default */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+textarea {
+  background-color: #F4F7F6;
+  border: 1px solid #E4EFEA;
+  border-radius: 0.875rem;
+  color: #192E27;
+  transition: all 0.15s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+  outline: none;
+  background-color: #FFFFFF;
+  border-color: #357F6B;
+  box-shadow: 0 0 0 3px rgba(53, 127, 107, 0.12);
+}
+
+/* 7. Subtle Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(12px) scale(0.99); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes cardSlideNext {
+  0% {
+    opacity: 0.35;
+    transform: translateY(18px) scale(0.97);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(-2px) scale(1.003);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes cardSlidePrev {
+  0% {
+    opacity: 0.35;
+    transform: translateY(-18px) scale(0.97);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(2px) scale(1.003);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-card-next {
+  animation: cardSlideNext 0.32s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-card-prev {
+  animation: cardSlidePrev 0.32s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.18s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes modalBackdropFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes modalPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.985);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-modal-backdrop {
+  animation: modalBackdropFade 0.15s ease-out forwards;
+}
+
+.animate-modal-pop {
+  animation: modalPop 0.18s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* 8. Modern Industrial Scrollbar (Neutral, subtle, non-intrusive) */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1; /* slate-300 */
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8; /* slate-400 */
+}
+
+/* 9. Interactive Table Row */
+.table-row-hover {
+  transition: background-color 0.12s ease;
+}
+
+.table-row-hover:hover {
+  background-color: #F8FAF9;
+}

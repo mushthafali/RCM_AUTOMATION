@@ -1,0 +1,412 @@
+{
+  "metadata": {
+    "app_version": "1.0.0",
+    "last_updated": "2026-08-27T10:00:00Z",
+    "organization": "PT. Indonesia Bersih Cemerlang"
+  },
+  "instruments": [
+    {
+      "instrument_id": 1,
+      "tag_number": "PT-303",
+      "description": "Reactor Vessel Pressure Transmitter",
+      "location": "Production Building Area A",
+      "process_variable": "Pressure",
+      "range_min": 0.0,
+      "range_max": 50.0,
+      "engineering_unit": "psig",
+      "process_tolerance": 0.3,
+      "vendor_tolerance_percent": 0.25,
+      "current_interval_months": 18,
+      "next_due_date": "2027-08-15",
+      "created_at": "2025-02-15T08:00:00Z",
+      "rcm_profile": {
+        "is_functional": false,
+        "triggers_operator_action": true,
+        "is_redundant": false,
+        "indication_comparison_possible": false,
+        "acceptable_drift_consequence": false,
+        "final_classification": "Critical",
+        "custom_notes": "Tekanan reaktor krusial untuk mencegah overpressure explosion."
+      },
+      "calibration_history": [
+        {
+          "calibration_id": 101,
+          "calibration_date": "2025-02-15",
+          "technician_name": "Ahmad",
+          "calibrator_standard_id": "CAL-STD-PRESS-01",
+          "calibration_type": "Field",
+          "environment_temperature": 24.0,
+          "environment_humidity": 55.0,
+          "as_found_status": "Pass",
+          "as_left_status": "Not Adjusted",
+          "decision_action": "MAINTAIN",
+          "previous_interval_months": 12,
+          "recommended_interval_months": 12,
+          "notes": "Kalibrasi awal commissioning normal",
+          "data_points": [
+            {
+              "percent_span": 0.0,
+              "standard_input": 0.0,
+              "as_found_reading": 0.02,
+              "as_found_error": 0.02,
+              "as_found_error_percent": 0.04,
+              "as_left_reading": null,
+              "as_left_error": null,
+              "as_left_error_percent": null,
+              "previous_error": 0.0,
+              "calculated_drift": 0.02,
+              "calculated_drift_percent": 0.04
+            },
+            {
+              "percent_span": 25.0,
+              "standard_input": 12.5,
+              "as_found_reading": 12.53,
+              "as_found_error": 0.03,
+              "as_found_error_percent": 0.06,
+              "as_left_reading": null,
+              "as_left_error": null,
+              "as_left_error_percent": null,
+              "previous_error": 0.0,
+              "calculated_drift": 0.03,
+              "calculated_drift_percent": 0.06
+            },
+            {
+              "percent_span": 50.0,
+              "standard_input": 25.0,
+              "as_found_reading": 25.05,
+              "as_found_error": 0.05,
+              "as_found_error_percent": 0.1,
+              "as_left_reading": null,
+              "as_left_error": null,
+              "as_left_error_percent": null,
+              "previous_error": 0.0,
+              "calculated_drift": 0.05,
+              "calculated_drift_percent": 0.1
+            },
+            {
+              "percent_span": 75.0,
+              "standard_input": 37.5,
+              "as_found_reading": 37.56,
+              "as_found_error": 0.06,
+              "as_found_error_percent": 0.12,
+              "as_left_reading": null,
+              "as_left_error": null,
+              "as_left_error_percent": null,
+              "previous_error": 0.0,
+              "calculated_drift": 0.06,
+              "calculated_drift_percent": 0.12
+            },
+            {
+              "percent_span": 100.0,
+              "standard_input": 50.0,
+              "as_found_reading": 50.08,
+              "as_found_error": 0.08,
+              "as_found_error_percent": 0.16,
+              "as_left_reading": null,
+              "as_left_error": null,
+              "as_left_error_percent": null,
+              "previous_error": 0.0,
+              "calculated_drift": 0.08,
+              "calculated_drift_percent": 0.16
+            }
+          ]
+        },
+        {
+          "calibration_id": 102,
+          "calibration_date": "2026-02-15",
+          "technician_name": "Ahmad",
+          "calibrator_standard_id": "CAL-STD-PRESS-01",
+          "calibration_type": "Field",
+          "environment_temperature": 24.5,
+          "environment_humidity": 58.0,
+          "as_found_status": "Pass",
+          "as_left_status": "Not Adjusted",
+          "decision_action": "EXTEND",
+          "previous_interval_months": 12,
+          "recommended_interval_months": 18,
+          "notes": "Drift stabil jauh di bawah toleransi vendor 0.25%, interval diperpanjang ke 18 bulan.",
+          "data_points": [
+            {
+              "percent_span": 0.0,
+              "standard_input": 0.0,
+              "as_found_reading": 0.03,
+              "as_found_error": 0.03,
+              "as_found_error_percent": 0.06,
+              "as_left_reading": null,
+              "as_left_error": null,
+              "as_left_error_percent": null,
+              "previous_error": 0.02,
+              "calculated_drift": 0.01,
+              "calculated_drift_percent": 0.02
+            },
+            {
+              "percent_span": 25.0,
+              "standard_input": 12.5,
+              "as_found_reading": 12.54,
+              "as_found_error": 0.04,
+              "as_found_error_percent": 0.08,
+              "as_left_reading": null,
+              "as_left_error": null,
+              "as_left_error_percent": null,
+              "previous_error": 0.03,
+              "calculated_drift": 0.01,
+              "calculated_drift_percent": 0.02
+            },
+            {
+              "percent_span": 50.0,
+              "standard_input": 25.0,
+              "as_found_reading": 25.07,
+              "as_found_error": 0.07,
+              "as_found_error_percent": 0.14,
+              "as_left_reading": null,
+              "as_left_error": null,
+              "as_left_error_percent": null,
+              "previous_error": 0.05,
+              "calculated_drift": 0.02,
+              "calculated_drift_percent": 0.04
+            },
+            {
+              "percent_span": 75.0,
+              "standard_input": 37.5,
+              "as_found_reading": 37.57,
+              "as_found_error": 0.07,
+              "as_found_error_percent": 0.14,
+              "as_left_reading": null,
+              "as_left_error": null,
+              "as_left_error_percent": null,
+              "previous_error": 0.06,
+              "calculated_drift": 0.01,
+              "calculated_drift_percent": 0.02
+            },
+            {
+              "percent_span": 100.0,
+              "standard_input": 50.0,
+              "as_found_reading": 50.09,
+              "as_found_error": 0.09,
+              "as_found_error_percent": 0.18,
+              "as_left_reading": null,
+              "as_left_error": null,
+              "as_left_error_percent": null,
+              "previous_error": 0.08,
+              "calculated_drift": 0.01,
+              "calculated_drift_percent": 0.02
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "instrument_id": 2,
+      "tag_number": "WT-102",
+      "description": "Silo Batching Hopper Load Cell",
+      "location": "Raw Material Batching Bay 2",
+      "process_variable": "Weight",
+      "range_min": 0.0,
+      "range_max": 2000.0,
+      "engineering_unit": "kg",
+      "process_tolerance": 2.0,
+      "vendor_tolerance_percent": 0.1,
+      "current_interval_months": 6,
+      "next_due_date": "2026-11-10",
+      "created_at": "2025-05-10T09:00:00Z",
+      "rcm_profile": {
+        "is_functional": true,
+        "triggers_operator_action": true,
+        "is_redundant": false,
+        "indication_comparison_possible": true,
+        "acceptable_drift_consequence": false,
+        "final_classification": "Critical",
+        "custom_notes": "Menimbang bahan baku formula produk farmasi/makanan."
+      },
+      "calibration_history": [
+        {
+          "calibration_id": 201,
+          "calibration_date": "2025-05-10",
+          "technician_name": "Hendro (Lead Metrologist)",
+          "calibrator_standard_id": "STD-WEIGHT-M1-SET",
+          "calibration_type": "Field",
+          "environment_temperature": 25.0,
+          "environment_humidity": 58.0,
+          "as_found_status": "Pass",
+          "as_left_status": "Not Adjusted",
+          "decision_action": "MAINTAIN",
+          "previous_interval_months": 6,
+          "recommended_interval_months": 6,
+          "notes": "Uji beban 10 titik span awal commissioning - kondisi sensor sangat linier dan stabil.",
+          "data_points": [
+            { "percent_span": 10.0, "standard_input": 200.0, "as_found_reading": 200.05, "as_found_error": 0.05, "as_found_error_percent": 0.0025, "as_left_reading": null, "as_left_error": null, "as_left_error_percent": null, "previous_error": 0.0, "calculated_drift": 0.05, "calculated_drift_percent": 0.0025 },
+            { "percent_span": 20.0, "standard_input": 400.0, "as_found_reading": 400.08, "as_found_error": 0.08, "as_found_error_percent": 0.004, "as_left_reading": null, "as_left_error": null, "as_left_error_percent": null, "previous_error": 0.0, "calculated_drift": 0.08, "calculated_drift_percent": 0.004 },
+            { "percent_span": 30.0, "standard_input": 600.0, "as_found_reading": 600.12, "as_found_error": 0.12, "as_found_error_percent": 0.006, "as_left_reading": null, "as_left_error": null, "as_left_error_percent": null, "previous_error": 0.0, "calculated_drift": 0.12, "calculated_drift_percent": 0.006 },
+            { "percent_span": 40.0, "standard_input": 800.0, "as_found_reading": 800.15, "as_found_error": 0.15, "as_found_error_percent": 0.0075, "as_left_reading": null, "as_left_error": null, "as_left_error_percent": null, "previous_error": 0.0, "calculated_drift": 0.15, "calculated_drift_percent": 0.0075 },
+            { "percent_span": 50.0, "standard_input": 1000.0, "as_found_reading": 1000.2, "as_found_error": 0.2, "as_found_error_percent": 0.01, "as_left_reading": null, "as_left_error": null, "as_left_error_percent": null, "previous_error": 0.0, "calculated_drift": 0.2, "calculated_drift_percent": 0.01 },
+            { "percent_span": 60.0, "standard_input": 1200.0, "as_found_reading": 1200.25, "as_found_error": 0.25, "as_found_error_percent": 0.0125, "as_left_reading": null, "as_left_error": null, "as_left_error_percent": null, "previous_error": 0.0, "calculated_drift": 0.25, "calculated_drift_percent": 0.0125 },
+            { "percent_span": 70.0, "standard_input": 1400.0, "as_found_reading": 1400.3, "as_found_error": 0.3, "as_found_error_percent": 0.015, "as_left_reading": null, "as_left_error": null, "as_left_error_percent": null, "previous_error": 0.0, "calculated_drift": 0.3, "calculated_drift_percent": 0.015 },
+            { "percent_span": 80.0, "standard_input": 1600.0, "as_found_reading": 1600.35, "as_found_error": 0.35, "as_found_error_percent": 0.0175, "as_left_reading": null, "as_left_error": null, "as_left_error_percent": null, "previous_error": 0.0, "calculated_drift": 0.35, "calculated_drift_percent": 0.0175 },
+            { "percent_span": 90.0, "standard_input": 1800.0, "as_found_reading": 1800.4, "as_found_error": 0.4, "as_found_error_percent": 0.02, "as_left_reading": null, "as_left_error": null, "as_left_error_percent": null, "previous_error": 0.0, "calculated_drift": 0.4, "calculated_drift_percent": 0.02 },
+            { "percent_span": 100.0, "standard_input": 2000.0, "as_found_reading": 2000.45, "as_found_error": 0.45, "as_found_error_percent": 0.0225, "as_left_reading": null, "as_left_error": null, "as_left_error_percent": null, "previous_error": 0.0, "calculated_drift": 0.45, "calculated_drift_percent": 0.0225 }
+          ]
+        },
+        {
+          "calibration_id": 202,
+          "calibration_date": "2025-11-10",
+          "technician_name": "Hendro (Lead Metrologist)",
+          "calibrator_standard_id": "STD-WEIGHT-M1-SET",
+          "calibration_type": "Field",
+          "environment_temperature": 26.0,
+          "environment_humidity": 62.0,
+          "as_found_status": "Pass",
+          "as_left_status": "Not Adjusted",
+          "decision_action": "MAINTAIN",
+          "previous_interval_months": 6,
+          "recommended_interval_months": 6,
+          "notes": "Uji berkala 6 bulan - mulai terdeteksi drift moderat pada span beban atas.",
+          "data_points": [
+            { "percent_span": 10.0, "standard_input": 200.0, "as_found_reading": 200.12, "as_found_error": 0.12, "as_found_error_percent": 0.006, "as_left_reading": null, "as_left_error": null, "as_left_error_percent": null, "previous_error": 0.05, "calculated_drift": 0.07, "calculated_drift_percent": 0.0035 },
+            { "percent_span": 20.0, "standard_input": 400.0, "as_found_reading": 400.22, "as_found_error": 0.22, "as_found_error_percent": 0.011, "as_left_reading": null, "as_left_error": null, "as_left_error_percent": null, "previous_error": 0.08, "calculated_drift": 0.14, "calculated_drift_percent": 0.007 },
+            { "percent_span": 30.0, "standard_input": 600.0, "as_found_reading": 600.35, "as_found_error": 0.35, "as_found_error_percent": 0.0175, "as_left_reading": null, "as_left_error": null, "as_left_error_percent": null, "previous_error": 0.12, "calculated_drift": 0.23, "calculated_drift_percent": 0.0115 },
+            { "percent_span": 40.0, "standard_input": 800.0, "as_found_reading": 800.48, "as_found_error": 0.48, "as_found_error_percent": 0.024, "as_left_reading": null, "as_left_error": null, "as_left_error_percent": null, "previous_error": 0.15, "calculated_drift": 0.33, "calculated_drift_percent": 0.0165 },
+            { "percent_span": 50.0, "standard_input": 1000.0, "as_found_reading": 1000.65, "as_found_error": 0.65, "as_found_error_percent": 0.0325, "as_left_reading": null, "as_left_error": null, "as_left_error_percent": null, "previous_error": 0.2, "calculated_drift": 0.45, "calculated_drift_percent": 0.0225 },
+            { "percent_span": 60.0, "standard_input": 1200.0, "as_found_reading": 1200.78, "as_found_error": 0.78, "as_found_error_percent": 0.039, "as_left_reading": null, "as_left_error": null, "as_left_error_percent": null, "previous_error": 0.25, "calculated_drift": 0.53, "calculated_drift_percent": 0.0265 },
+            { "percent_span": 70.0, "standard_input": 1400.0, "as_found_reading": 1400.92, "as_found_error": 0.92, "as_found_error_percent": 0.046, "as_left_reading": null, "as_left_error": null, "as_left_error_percent": null, "previous_error": 0.3, "calculated_drift": 0.62, "calculated_drift_percent": 0.031 },
+            { "percent_span": 80.0, "standard_input": 1600.0, "as_found_reading": 1601.1, "as_found_error": 1.1, "as_found_error_percent": 0.055, "as_left_reading": null, "as_left_error": null, "as_left_error_percent": null, "previous_error": 0.35, "calculated_drift": 0.75, "calculated_drift_percent": 0.0375 },
+            { "percent_span": 90.0, "standard_input": 1800.0, "as_found_reading": 1801.25, "as_found_error": 1.25, "as_found_error_percent": 0.0625, "as_left_reading": null, "as_left_error": null, "as_left_error_percent": null, "previous_error": 0.4, "calculated_drift": 0.85, "calculated_drift_percent": 0.0425 },
+            { "percent_span": 100.0, "standard_input": 2000.0, "as_found_reading": 2001.4, "as_found_error": 1.4, "as_found_error_percent": 0.07, "as_left_reading": null, "as_left_error": null, "as_left_error_percent": null, "previous_error": 0.45, "calculated_drift": 0.95, "calculated_drift_percent": 0.0475 }
+          ]
+        },
+        {
+          "calibration_id": 203,
+          "calibration_date": "2026-05-10",
+          "technician_name": "Hendro (Lead Metrologist)",
+          "calibrator_standard_id": "STD-WEIGHT-M1-SET",
+          "calibration_type": "Field",
+          "environment_temperature": 26.5,
+          "environment_humidity": 61.0,
+          "as_found_status": "Marginal",
+          "as_left_status": "Adjusted",
+          "decision_action": "SHORTEN",
+          "previous_interval_months": 6,
+          "recommended_interval_months": 3,
+          "notes": "Drift laju tinggi mendekati batas toleransi vendor (0.10%). Jadwal kalibrasi diperketat ke 3 bulan.",
+          "data_points": [
+            { "percent_span": 10.0, "standard_input": 200.0, "as_found_reading": 200.25, "as_found_error": 0.25, "as_found_error_percent": 0.0125, "as_left_reading": 200.05, "as_left_error": 0.05, "as_left_error_percent": 0.0025, "previous_error": 0.12, "calculated_drift": 0.13, "calculated_drift_percent": 0.0065 },
+            { "percent_span": 20.0, "standard_input": 400.0, "as_found_reading": 400.45, "as_found_error": 0.45, "as_found_error_percent": 0.0225, "as_left_reading": 400.08, "as_left_error": 0.08, "as_left_error_percent": 0.004, "previous_error": 0.22, "calculated_drift": 0.23, "calculated_drift_percent": 0.0115 },
+            { "percent_span": 30.0, "standard_input": 600.0, "as_found_reading": 600.68, "as_found_error": 0.68, "as_found_error_percent": 0.034, "as_left_reading": 600.1, "as_left_error": 0.1, "as_left_error_percent": 0.005, "previous_error": 0.35, "calculated_drift": 0.33, "calculated_drift_percent": 0.0165 },
+            { "percent_span": 40.0, "standard_input": 800.0, "as_found_reading": 800.95, "as_found_error": 0.95, "as_found_error_percent": 0.0475, "as_left_reading": 800.12, "as_left_error": 0.12, "as_left_error_percent": 0.006, "previous_error": 0.48, "calculated_drift": 0.47, "calculated_drift_percent": 0.0235 },
+            { "percent_span": 50.0, "standard_input": 1000.0, "as_found_reading": 1001.25, "as_found_error": 1.25, "as_found_error_percent": 0.0625, "as_left_reading": 1000.15, "as_left_error": 0.15, "as_left_error_percent": 0.0075, "previous_error": 0.65, "calculated_drift": 0.6, "calculated_drift_percent": 0.03 },
+            { "percent_span": 60.0, "standard_input": 1200.0, "as_found_reading": 1201.55, "as_found_error": 1.55, "as_found_error_percent": 0.0775, "as_left_reading": 1200.2, "as_left_error": 0.2, "as_left_error_percent": 0.01, "previous_error": 0.78, "calculated_drift": 0.77, "calculated_drift_percent": 0.0385 },
+            { "percent_span": 70.0, "standard_input": 1400.0, "as_found_reading": 1401.85, "as_found_error": 1.85, "as_found_error_percent": 0.0925, "as_left_reading": 1400.25, "as_left_error": 0.25, "as_left_error_percent": 0.0125, "previous_error": 0.92, "calculated_drift": 0.93, "calculated_drift_percent": 0.0465 },
+            { "percent_span": 80.0, "standard_input": 1600.0, "as_found_reading": 1602.1, "as_found_error": 2.1, "as_found_error_percent": 0.105, "as_left_reading": 1600.3, "as_left_error": 0.3, "as_left_error_percent": 0.015, "previous_error": 1.1, "calculated_drift": 1.0, "calculated_drift_percent": 0.05 },
+            { "percent_span": 90.0, "standard_input": 1800.0, "as_found_reading": 1802.35, "as_found_error": 2.35, "as_found_error_percent": 0.1175, "as_left_reading": 1800.35, "as_left_error": 0.35, "as_left_error_percent": 0.0175, "previous_error": 1.25, "calculated_drift": 1.1, "calculated_drift_percent": 0.055 },
+            { "percent_span": 100.0, "standard_input": 2000.0, "as_found_reading": 2002.6, "as_found_error": 2.6, "as_found_error_percent": 0.13, "as_left_reading": 2000.4, "as_left_error": 0.4, "as_left_error_percent": 0.02, "previous_error": 1.4, "calculated_drift": 1.2, "calculated_drift_percent": 0.06 }
+          ]
+        }
+      ]
+    },
+    {
+      "instrument_id": 3,
+      "tag_number": "TT-205",
+      "description": "Cooling Jacket Outlet Temperature",
+      "location": "Utility Chiller Station 1",
+      "process_variable": "Temperature",
+      "range_min": -20.0,
+      "range_max": 100.0,
+      "engineering_unit": "°C",
+      "process_tolerance": 1.0,
+      "vendor_tolerance_percent": 0.5,
+      "current_interval_months": 24,
+      "next_due_date": "2027-10-01",
+      "created_at": "2024-10-01T08:00:00Z",
+      "rcm_profile": {
+        "is_functional": false,
+        "triggers_operator_action": false,
+        "is_redundant": true,
+        "indication_comparison_possible": true,
+        "acceptable_drift_consequence": true,
+        "final_classification": "Non-Critical",
+        "custom_notes": "Suhu pendingin memiliki sensor pembanding sekunder dan backup alarm otomatis."
+      },
+      "calibration_history": [
+        {
+          "calibration_id": 301,
+          "calibration_date": "2025-10-01",
+          "technician_name": "Rian",
+          "calibrator_standard_id": "CAL-DRYBLOCK-02",
+          "calibration_type": "Workshop",
+          "environment_temperature": 23.0,
+          "environment_humidity": 50.0,
+          "as_found_status": "Pass",
+          "as_left_status": "Not Adjusted",
+          "decision_action": "EXTEND",
+          "previous_interval_months": 12,
+          "recommended_interval_months": 24,
+          "notes": "Sensor tipe RTD sangat stabil, instrumen non-kritis dengan redundansi.",
+          "data_points": [
+            {
+              "percent_span": 0.0,
+              "standard_input": -20.0,
+              "as_found_reading": -19.9,
+              "as_found_error": 0.1,
+              "as_found_error_percent": 0.08,
+              "as_left_reading": null,
+              "as_left_error": null,
+              "as_left_error_percent": null,
+              "previous_error": 0.0,
+              "calculated_drift": 0.1,
+              "calculated_drift_percent": 0.08
+            },
+            {
+              "percent_span": 50.0,
+              "standard_input": 40.0,
+              "as_found_reading": 40.2,
+              "as_found_error": 0.2,
+              "as_found_error_percent": 0.17,
+              "as_left_reading": null,
+              "as_left_error": null,
+              "as_left_error_percent": null,
+              "previous_error": 0.0,
+              "calculated_drift": 0.2,
+              "calculated_drift_percent": 0.17
+            },
+            {
+              "percent_span": 100.0,
+              "standard_input": 100.0,
+              "as_found_reading": 100.3,
+              "as_found_error": 0.3,
+              "as_found_error_percent": 0.25,
+              "as_left_reading": null,
+              "as_left_error": null,
+              "as_left_error_percent": null,
+              "previous_error": 0.0,
+              "calculated_drift": 0.3,
+              "calculated_drift_percent": 0.25
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "intermediate_checks": [
+    {
+      "check_id": 1,
+      "instrument_id": 1,
+      "check_date": "2026-05-20",
+      "inspector_name": "Budi",
+      "reference_value": 25.0,
+      "observed_value": 25.05,
+      "deviation": 0.05,
+      "status": "OK",
+      "notes": "Pemeriksaan titik tengah normal"
+    },
+    {
+      "check_id": 2,
+      "instrument_id": 2,
+      "check_date": "2026-07-15",
+      "inspector_name": "Budi",
+      "reference_value": 500.0,
+      "observed_value": 500.3,
+      "deviation": 0.3,
+      "status": "OK",
+      "notes": "Pemeriksaan beban uji 500 kg normal"
+    }
+  ]
+}
